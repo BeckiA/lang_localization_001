@@ -1,0 +1,8 @@
+{
+  "@@locale": "am",
+  "hello": "ሰላም",
+  "welcome": "እንኳን ደህና መጡ",
+  "@welcome": {
+    "description": "የእንኳን ደህና መጡ መልእክት በቀዳሚ ገጽ"
+  }
+}
