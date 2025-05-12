@@ -24,9 +24,10 @@ class LanguageSelector extends StatelessWidget {
     );
   }
 
-  void _updateLocale(BuildContext context, Locale locale) {
+  void _updateLocale(BuildContext context, Locale locale) async {
     // Assuming you are using a state management solution like Provider
     final localeProvider = Provider.of<LocaleProvider>(context, listen: false);
     localeProvider.setLocale(locale);
+    await localeProvider.debugCheckStorage();
   }
 }
